@@ -116,6 +116,75 @@
               box-shadow: 0 0 50px 3px #ffeb3b9e;
           }
       
+     
+      /* Add these new styles for the thumbnail section */
+      .documentry img {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+          display: block;
+      }
+      
+      /* Responsive adjustments for different screen sizes */
+      @media (max-width: 768px) {
+          .documentry {
+              padding: 0;
+          }
+          
+          .documentry .heading-section {
+              width: 100%;
+          }
+          
+          .documentry h2.mb-4 {
+              font-size: 24px;
+              margin-bottom: 15px !important;
+          }
+          
+          .margin-top {
+              margin-top: 10px;
+          }
+      }
+      
+      @media (max-width: 480px) {
+          .documentry h2.mb-4 {
+              font-size: 20px;
+          }
+          
+          .documentry.row {
+              margin-bottom: 1rem !important;
+              padding-bottom: 1rem !important;
+          }
+      }
+      
+      /* Update these styles to prevent horizontal scrolling */
+      .documentry.row {
+          margin-left: 0;
+          margin-right: 0;
+          width: 100%;
+          max-width: 100%;
+      }
+      
+      .documentry img {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+          display: block;
+          /* Prevent image from overflowing */
+          box-sizing: border-box;
+          padding: 0 15px;
+      }
+      
+      /* Ensure container doesn't overflow */
+      #thumbnail-section {
+          overflow-x: hidden;
+          width: 100%;
+      }
+      
+      /* Additional fix for row margins if needed */
+      .row {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+      }
       
       </style>
    </head>
@@ -186,7 +255,7 @@
                                   </script>
                                 <p>
                                     <a href="#about-section" class="btn btn-primary py-3 px-4">About Me</a>
-                                    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
+                                    <a href="#video-section" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
                                 </p>
                             </div>
                         </div>
@@ -271,7 +340,7 @@
                                 <span class="number" data-number="120">0</span>
                                 <span>Projects Completed</span>
                             </p>
-                            <p><a href="#projects-section" class="btn btn-primary py-3 px-3">View Portfolio</a></p>
+                            <p><a href="#video-section" class="btn btn-primary py-3 px-3">View Portfolio</a></p>
                         </div>
                     </div>
                 </div>
@@ -329,7 +398,7 @@
     </section>
 
     <!-- Projects Section with Larger Videos -->
-    <section class="ftco-section" id="video-section">
+    <section class="ftco-section" style="padding: 20px;"  id="video-section">
         <div class="container-fluid px-md-5"> <!-- Changed to container-fluid for wider content -->
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -406,7 +475,7 @@
             </div> -->
         </div>
         <div id="thumbnail-section">
-          <div class="row justify-content-center mb-5 pb-5">
+          <div class="row justify-content-center ">
             <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Thumbnail</h2>
@@ -500,7 +569,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Whatsapp Number</h3>
-	            <p><a href="https://api.whatsapp.com/send?phone=918744819163&text=hello%20yom%2C%20i%20see%20your%20Portfolio%20">+91 8744819163</a></p>
+	            <p><a href="https://api.whatsapp.com/send?phone=918744819163&text=hello%20yom%2C%20i%20see%20your%20Portfolio%20" target="_blank">+91 8744819163</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -509,7 +578,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:yom.rishabh@gmail.com">yom.rishabh@gmail.com</a></p>
+	            <p><a href="mailto:yom.rishabh@gmail.com" target="_blank">yom.rishabh@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -518,7 +587,7 @@
           			<span class="icon-instagram"></span>
           		</div>
           		<h3 class="mb-4">Instagram</h3>
-	            <p><a href="https://Instagram.com/mr_yom_gupta">mr_yom_gupta</a></p>
+	            <p><a href="https://Instagram.com/mr_yom_gupta" target="_blank">mr_yom_gupta</a></p>
 	          </div>
           </div>
 
@@ -527,14 +596,14 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="mailto:yom.rishabh@gmail.com" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have a<span> Question?  </span> <a href="mailto:yom.rishabh@gmail.com" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@yomgupta"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://Instagram.com/mr_yom_gupta"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@yomedites" target="_blank"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://Instagram.com/mr_yom_gupta" target="_blank"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
